@@ -2,7 +2,7 @@ import React from "react";
 
 function Hero() {
   return (
-    <div className="carousel h-[95vh] w-full">
+    <div className="carousel min-h-screen w-full">
       <div id="slide1" className="carousel-item relative w-full">
         <img
           src="https://daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.jpg"

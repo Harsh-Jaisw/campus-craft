@@ -1,14 +1,15 @@
 import React from 'react'
 import Hero from './Hero'
-import Footer from '../../Components/Footer/Footer'
-import Navbar from '../../Components/Navbar/Navbar'
+
+import HomeAbout from './HomeAbout'
 
 function Home() {
   return (
       <div>
-          <Navbar/>
+    
           <Hero />
-      <Footer/></div>
+          <HomeAbout/>
+    </div>
   )
 }
 
