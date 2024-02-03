@@ -32,16 +32,16 @@ function AboutUs() {
           />
           <div>
           <h1 className="text-3xl font-bold mb-4">Empowering Dreams, Shaping Futures</h1>
-            <p className="text-gray-700">
+            <p className="">
         Welcome to Campus Craft, where we specialize in helping students achieve their dreams by facilitating admissions to various colleges across different streams. With a dedicated team and a wealth of experience, we have successfully assisted students in pursuing higher education tailored to their aspirations.
       </p>
-      <p className="text-gray-700 mt-4">
+      <p className=" mt-4">
         At Campus Craft, we understand the unique needs of each student, and our mission is to simplify the admission process, making it seamless and stress-free. Whether you are interested in engineering, arts, science, or any other field, we are here to guide you through the journey of securing admission to the college of your choice.
       </p>
-      <p className="text-gray-700 mt-4">
+      <p className=" mt-4">
         Our commitment is to provide personalized assistance, reliable information, and support at every step. We take pride in being a trusted partner in your educational journey and helping you make informed decisions about your future.
       </p>
-            <button className="btn btn-primary">Get Started</button>
+            <button className="btn mt-4 btn-primary">Get Started</button>
           </div>
         </div>
       </div>

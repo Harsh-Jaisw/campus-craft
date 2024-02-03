@@ -161,6 +161,4 @@ export const CollegeData=[
 {
     CollegeName:"Harsh college",details:[]
 }
-
-
 ]

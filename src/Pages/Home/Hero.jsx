@@ -1,66 +1,64 @@
-import React from "react";
-
+import React ,{ useState} from "react";
+import axis from "../../assets/axis-college.webp"
+import allenhouse from "../../assets/allenhouse.webp"
+import kit from "../../assets/kit.webp"
+import Rama from "../../assets/Rama-University.webp"
+import jsu from "../../assets/js-university.webp"
 function Hero() {
+  const [currentSlide, setCurrentSlide] = useState(1);
+
+  const moveToSlide = (newSlide) => {
+    setCurrentSlide(newSlide);
+  };
+
+  const moveLeft = () => {
+    const newSlide = currentSlide === 1 ? 5 : currentSlide - 1;
+    moveToSlide(newSlide);
+  };
+
+  const moveRight = () => {
+    const newSlide = currentSlide === 5 ? 1 : currentSlide + 1;
+    moveToSlide(newSlide);
+  };
+
   return (
-    <div className="carousel min-h-screen w-full">
-      <div id="slide1" className="carousel-item relative w-full">
-        <img
-          src="https://daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.jpg"
-          className="w-full"
-        />
-        <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-          <a href="#slide4" className="btn btn-circle">
-            ❮
-          </a>
-          <a href="#slide2" className="btn btn-circle">
-            ❯
-          </a>
+    <div className="carousel min-h-screen w-full relative overflow-hidden">
+      <div
+        className="carousel-container flex"
+        style={{
+          height: "100vh", // Set the height to 100% of the viewport height
+          transform: `translateX(-${(currentSlide - 1) * 100}%)`
+        }}
+      >
+        <div className="carousel-item relative w-full">
+          <img src={axis} className="w-full h-full object-cover" alt="Axis College" />
+        </div>
+        <div className="carousel-item relative w-full">
+          <img src={kit} className="w-full h-full object-cover" alt="Kit Image" />
+        </div>
+        <div className="carousel-item relative w-full">
+          <img src={allenhouse} className="w-full h-full object-cover" alt="Allen House Image" />
+        </div>
+        <div className="carousel-item relative w-full">
+          <img src={Rama} className="w-full h-full object-cover" alt="Rama Image" />
+        </div>
+        <div className="carousel-item relative w-full">
+          <img src={jsu} className="w-full h-full object-cover" alt="JSU Image" />
         </div>
       </div>
-      <div id="slide2" className="carousel-item relative w-full">
-        <img
-          src="https://daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.jpg"
-          className="w-full"
-        />
-        <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-          <a href="#slide1" className="btn btn-circle">
-            ❮
-          </a>
-          <a href="#slide3" className="btn btn-circle">
-            ❯
-          </a>
-        </div>
-      </div>
-      <div id="slide3" className="carousel-item relative w-full">
-        <img
-          src="https://daisyui.com/images/stock/photo-1414694762283-acccc27bca85.jpg"
-          className="w-full"
-        />
-        <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-          <a href="#slide2" className="btn btn-circle">
-            ❮
-          </a>
-          <a href="#slide4" className="btn btn-circle">
-            ❯
-          </a>
-        </div>
-      </div>
-      <div id="slide4" className="carousel-item relative w-full">
-        <img
-          src="https://daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.jpg"
-          className="w-full"
-        />
-        <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-          <a href="#slide3" className="btn btn-circle">
-            ❮
-          </a>
-          <a href="#slide1" className="btn btn-circle">
-            ❯
-          </a>
-        </div>
+      <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+        <button onClick={moveLeft} className="btn btn-circle">
+          ❮
+        </button>
+        <button onClick={moveRight} className="btn btn-circle">
+          ❯
+        </button>
       </div>
     </div>
   );
 }
+
+
+
 
 export default Hero;
