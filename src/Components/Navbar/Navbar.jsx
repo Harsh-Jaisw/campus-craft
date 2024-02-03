@@ -1,7 +1,17 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import ToggleThemeBtn from "../ToggleThemeBtn/ToggleThemeBtn";
 
 function Navbar() {
+const myTheme = document.getElementById("main");
+const toggleTheme = () => {
+  const currentTheme = myTheme.getAttribute("data-theme");
+  const newTheme = currentTheme === "cupcake" ? "dark" : "cupcake";
+  myTheme.setAttribute("data-theme", newTheme);
+};
+
+
+
   return (
     <div className="navbar bg-base-100">
       <div className="navbar-start">
@@ -58,6 +68,10 @@ function Navbar() {
         <Link to="/contactus" className="btn">
           ContactUs
         </Link>
+        {/* <button onClick={} id="themeToggleBtn">Theme</button> */}
+      <ToggleThemeBtn onChange={()=>toggleTheme()}/>
+
+
       </div>
     </div>
   );
