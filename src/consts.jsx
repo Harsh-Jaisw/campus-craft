@@ -162,3 +162,49 @@ export const CollegeData=[
     CollegeName:"Virendra Swaroop", CollegeBgPic:"",collegePic:"",details:[]
 }
 ]
+
+export const testimonialsData = [
+  
+        {
+          id: 1,
+          name: "Ananya Singh",
+          photo: "/course/BouStudent1.webp",
+          contentHeading: "Informed College Selection",
+          content: "I'm delighted with the guidance at Campus Craft. The advice is excellent, aiding in informed decisions for choosing the right college effortlessly."
+        },
+        {
+          id: 2,
+          name: "Rahul Verma",
+          photo: "/course/BoyStudent.webp",
+          contentHeading: "Expert Advice for College Paths",
+          content: "The staff is highly knowledgeable and supportive at Campus Craft. They ensure every student comprehensively understands various college paths available."
+        },
+        {
+          id: 3,
+          name: "Aishwarya Sharma",
+          photo: "/course/GirlStudent1.webp",
+          contentHeading: "Streamlined College Decision-Making",
+          content: "The guidance experience here is fantastic. It streamlines the decision-making process for choosing the right college, ensuring an enjoyable experience."
+        },
+        {
+          id: 4,
+          name: "Vikram Patel",
+          photo: "/course/BoyStudent2.webp",
+          contentHeading: "Friendly College Advice",
+          content: "The friendly atmosphere at Campus Craft makes college advice enjoyable. I recommend this service to anyone seeking assistance in their academic journey."
+        },
+        {
+          id: 5,
+          name: "Deepika Joshi",
+          photo: "/course/GirlStudent.webp",
+          contentHeading: "Focus on College Selection Skills",
+          content: "The emphasis on practical skills for college selection at Campus Craft sets it apart. The advice provided is a significant advantage for graduates seeking suitable college opportunities."
+        },
+        {
+          id: 6,
+          name: "Arun Khanna",
+          photo: "/course/BouStudent3.webp",
+          contentHeading: "Guidance for Informed College Choices",
+          content: "I appreciate the guidance at Campus Craft. It helps in making informed decisions for choosing the right college, ensuring a smooth transition into academic life."
+        }   
+  ];
