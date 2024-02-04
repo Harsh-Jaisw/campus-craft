@@ -1,14 +1,15 @@
 import React from "react";
 import "./ToggleThemeBtn.css"
 function ToggleThemeBtn(props) {
-    const {onChange}=props
+    const {onChange,className}=props
   return (
-    <label className="ui-switch">
+    <div className={className}> <label className="ui-switch">
       <input type="checkbox" onChange={onChange} />
       <div className="slider">
         <div className="circle"></div>
       </div>
     </label>
+    </div>
   );
 }
 

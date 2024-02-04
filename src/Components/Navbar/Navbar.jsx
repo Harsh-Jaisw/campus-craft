@@ -10,8 +10,6 @@ const toggleTheme = () => {
   myTheme.setAttribute("data-theme", newTheme);
 };
 
-
-
   return (
     <div className="navbar bg-base-100 sticky top-0 z-10">
       <div className="navbar-start">
@@ -45,6 +43,7 @@ const toggleTheme = () => {
             <li>
               <Link to="/courses">COURSES</Link>
             </li>
+          <ToggleThemeBtn onChange={()=>toggleTheme()}/>
           </ul>
         </div>
         <Link to="/" className="btn text-xl">
@@ -69,9 +68,7 @@ const toggleTheme = () => {
           CONTACT US
         </Link>
         {/* <button onClick={} id="themeToggleBtn">Theme</button> */}
-      <ToggleThemeBtn onChange={()=>toggleTheme()}/>
-
-
+      <ToggleThemeBtn className={"hidden md:block mx-2"} onChange={()=>toggleTheme()}/>
       </div>
     </div>
   );
