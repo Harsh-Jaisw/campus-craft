@@ -1,20 +1,20 @@
-import React from 'react'
-import Hero from './Hero'
-
-import HomeAbout from './HomeAbout'
-import HomeCustomer from './HomeCustomer'
-import Slider from '../../Components/Slider/Slider'
+import React from "react";
+import Hero from "./Hero";
+import HomeAbout from "./HomeAbout";
+import HomeCustomer from "./HomeCustomer";
+import Slider from "../../Components/Slider/Slider";
+import {CollegeData} from "../../consts";
 
 function Home() {
+  console.log(CollegeData)
   return (
-      <div>
-    
-          <Hero />
-          <HomeAbout/>
-          <HomeCustomer/>
-          <Slider/>
+    <div>
+      <Hero />
+      <HomeAbout />
+      <HomeCustomer />
+      <Slider data={CollegeData} />
     </div>
-  )
+  );
 }
 
-export default Home
+export default Home;
