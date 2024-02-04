@@ -17,7 +17,12 @@ import {
 import { CollegeData } from "../../consts";
 
 function ContactUs() {
-  const {control,handleSubmit,formState: { errors },watch,} = useForm({});
+  const {
+    control,
+    handleSubmit,
+    formState: { errors },
+    watch,
+  } = useForm({});
   const onSubmit = (data) => console.log(data);
   const selectedCollege = watch("SelectCollege");
   console.log("Real-time values:", selectedCollege);
@@ -28,11 +33,7 @@ function ContactUs() {
         <Typography variant="h4" color="blue-gray" className="text-center">
           CONTACT US
         </Typography>
-        <Typography
-          color="gray"
-          className="mt-1 font-normal text-center"
-          
-        >
+        <Typography color="gray" className="mt-1 font-normal text-center">
           Nice to meet you! Enter your details to get connected.
         </Typography>
         <br />
@@ -89,27 +90,60 @@ function ContactUs() {
             </p>
           )}
           <div className="my-3"></div>
-          <div className="flex my-3 gap-2">
-            <Controller
-              name="Email"
-              control={control}
-              render={({ field }) => (
-                <Input
-                  size="lg"
-                  label="Email"
-                  {...field}
-                  type="email"
-                  error={false}
-                />
+          <div className="flex my-3 gap-3 w-[100%]">
+            <div className="w-full">
+              <Controller
+                name="email"
+                rules={{
+                  required: "Email is required",
+                  pattern: {
+                    value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+                    message: "Email is invalid",
+                  },
+                }}
+                control={control}
+                render={({ field }) => (
+                  <Input
+                    size="lg"
+                    label="Email"
+                    {...field}
+                    type="email"
+                    error={errors?.email?.message}
+                  />
+                )}
+              />
+              {errors?.email?.message && (
+                <p className="text-red-500 text-xs my-1">
+                  {errors?.email?.message}
+                </p>
               )}
-            />
-            <Controller
-              name="mobile"
-              control={control}
-              render={({ field }) => (
-                <Input size="lg" label="Mobile No." {...field} error={false} />
+            </div>
+            <div className="w-full">
+              <Controller
+                name="mobile"
+                control={control}
+                rules={{
+                  required: "Mobile is required",
+                  pattern: {
+                    value: /^[0-9]{10}$/,
+                    message: "Mobile No. is invalid",
+                  },
+                }}
+                render={({ field }) => (
+                  <Input
+                    size="lg"
+                    label="Mobile No."
+                    {...field}
+                    error={errors?.mobile?.message}
+                  />
+                )}
+              />
+              {errors?.mobile?.message && (
+                <p className="text-red-500 text-xs my-1">
+                  {errors?.mobile?.message}
+                </p>
               )}
-            />
+            </div>
           </div>
           <div className="my-3">
             <Controller
@@ -126,25 +160,29 @@ function ContactUs() {
               )}
             />
           </div>
-          <div className="my-3">
-            <Controller
-              name="Select Course"
-              control={control}
-              render={({ field }) => (
-                <Select label="Select Course" {...field} error={false}>
-                  {CollegeData[selectedCollege ? selectedCollege : 0]?.details?.map((item, index) => (
-                    <Option
-                      key={index}
-                      value={item.CourseName}
-                      className="my-2"
-                    >
-                      {item.CourseName}
-                    </Option>
-                  ))}
-                </Select>
-              )}
-            />
-          </div>
+          {selectedCollege ? (
+            <div className="my-3">
+              <Controller
+                name="Select Course"
+                control={control}
+                render={({ field }) => (
+                  <Select label="Select Course" {...field} error={false}>
+                    {CollegeData[
+                      selectedCollege ? selectedCollege : 0
+                    ]?.details?.map((item, index) => (
+                      <Option
+                        key={index}
+                        value={item.CourseName}
+                        className="my-2"
+                      >
+                        {item.CourseName}
+                      </Option>
+                    ))}
+                  </Select>
+                )}
+              />
+            </div>
+          ) : null}
           <Button fullWidth loading={false} color="blue" type="submit">
             block level button
           </Button>
