@@ -8,7 +8,7 @@ function HomeCustomer() {
   return (
     <div className="grid grid-cols-2 p-8 md:grid-cols-4 gap-3">
     <span className='text-center'>
-        <CountUp style={countUpStyle} start={30} end={50} duration={6} />
+        <CountUp style={countUpStyle} start={20} end={50} duration={6} />
         <span className='text-2xl md:text-3xl font-[800]'>+</span>
         <h2 className="text-base md:text-2xl  font-bold">Partnered Colleges</h2>
         <p className="text-sm md:text-base">Diverse colleges connected with us for your exploration.</p>

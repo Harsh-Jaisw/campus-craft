@@ -1,7 +1,9 @@
 import React from "react";
 import about from "../../assets/College.webp";
 import aboutHome from "../../assets/AboutHome.webp";
+import { useNavigate } from "react-router-dom";
 function AboutUs() {
+  const navigate=useNavigate()
   return (
     <div>
       <div
@@ -52,7 +54,7 @@ function AboutUs() {
               trusted partner in your educational journey and helping you make
               informed decisions about your future.
             </p>
-            <button className="btn mt-4 btn-primary">Get Started</button>
+            <button onClick={()=>navigate("/contactus")}  className="btn mt-4 btn-primary">Get Started</button>
           </div>
         </div>
       </div>

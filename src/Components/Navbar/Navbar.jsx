@@ -43,10 +43,15 @@ const toggleTheme = () => {
             <li>
               <Link to="/courses">COURSES</Link>
             </li>
-          <ToggleThemeBtn onChange={()=>toggleTheme()}/>
+            <li>
+            <Link to="/contactus" >
+          CONTACT US
+        </Link>
+            </li>
+          {/* <ToggleThemeBtn onChange={()=>toggleTheme()}/> */}
           </ul>
         </div>
-        <Link to="/" className="btn text-xl">
+        <Link to="/" className="text-xl text-nowrap">
           Campus Craft
         </Link>
       </div>
@@ -64,11 +69,11 @@ const toggleTheme = () => {
         </ul>
       </div>
       <div className="navbar-end">
-        <Link to="/contactus" className="btn">
+        <Link to="/contactus" className="btn hidden lg:flex">
           CONTACT US
         </Link>
         {/* <button onClick={} id="themeToggleBtn">Theme</button> */}
-      <ToggleThemeBtn className={"hidden md:block mx-2"} onChange={()=>toggleTheme()}/>
+      {/* <ToggleThemeBtn className={"hidden md:block mx-2"} onChange={()=>toggleTheme()}/> */}
       </div>
     </div>
   );

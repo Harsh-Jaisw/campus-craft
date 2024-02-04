@@ -1,7 +1,9 @@
 import React from "react";
 import about from "../../assets/About.webp"
+import { useNavigate } from "react-router-dom";
 
 function HomeAbout() {
+  const navigate=useNavigate()
   return (
     <div className="hero min-h-fit md:py-20 py-5 bg-base-200">
       <div className="hero-content flex-col lg:flex-row-reverse">
@@ -26,7 +28,7 @@ function HomeAbout() {
             the admission process, making it stress-free for students and their
             families.
           </p>
-          <button className="btn mt-8 btn-primary">Learn More</button>
+          <button className="btn mt-8 btn-primary" onClick={()=>navigate("/contactus")}>Learn More</button>
         </div>
       </div>
     </div>
