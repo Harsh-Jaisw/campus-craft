@@ -1,6 +1,6 @@
 export const CollegeData=[
     {
-    CollegeName:"Axis college",details:[
+    CollegeName:"Axis college", CollegeBgPic:"",collegePic:"",details:[
         {
             programType:"PG",CourseDuration:"2 Year",CourseName:"Digital Electronics and Communication Engineering",intake:"18",lateral:"",eligibility:"Passed Bachelor's Degree or equivalent in the relevant field. Obtained at least 50% marks (45% marks in case of candidates belonging to reserved category) in the qualifying Examination."
         },
@@ -144,21 +144,21 @@ export const CollegeData=[
     ]
 },
 {
-    CollegeName:"Harsh college",details:[]
+    CollegeName:"Allenhouse college", CollegeBgPic:"",collegePic:"",details:[]
 },
 {
-    CollegeName:"Harsh college",details:[]
+    CollegeName:"Krishna Group Of Institutions", CollegeBgPic:"",collegePic:"",details:[]
 },
 {
-    CollegeName:"Harsh college",details:[]
+    CollegeName:"Rama University", CollegeBgPic:"",collegePic:"",details:[]
 },
 {
-    CollegeName:"Harsh college",details:[]
+    CollegeName:"Vision Institiute Of Technology", CollegeBgPic:"",collegePic:"",details:[]
 },
 {
-    CollegeName:"Harsh college",details:[]
+    CollegeName:"J.S University", CollegeBgPic:"",collegePic:"",details:[]
 },
 {
-    CollegeName:"Harsh college",details:[]
+    CollegeName:"Virendra Swaroop", CollegeBgPic:"",collegePic:"",details:[]
 }
 ]
