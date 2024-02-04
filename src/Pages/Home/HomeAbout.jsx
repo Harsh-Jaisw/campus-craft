@@ -7,8 +7,7 @@ function HomeAbout() {
       <div className="hero-content flex-col lg:flex-row-reverse">
         <img
           src={about}
-                  width={600}
-                  
+          width={600}        
           className=" rounded-lg shadow-2xl"
           alt="About Us"
         />

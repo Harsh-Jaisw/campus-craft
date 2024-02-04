@@ -1,33 +1,14 @@
-export const CollegeData = [
-  {
-    CollegeName: "Axis college",
-    
-    details: [
-      {
-        programType: "PG",
-        CourseDuration: "2 Year",
-        CourseName: "Digital Electronics and Communication Engineering",
-        intake: "18",
-        lateral: "",
-        eligibility:
-          "Passed Bachelor's Degree or equivalent in the relevant field. Obtained at least 50% marks (45% marks in case of candidates belonging to reserved category) in the qualifying Examination.",
-      },
-      {
-        programType: "PG",
-        CourseDuration: "2 Year",
-        CourseName: "CAD/CAM",
-        intake: "18",
-        lateral: "",
-        eligibility:
-          "Passed Bachelor's Degree or equivalent in the relevant field. Obtained at least 50% marks (45% marks in case of candidates belonging to reserved category) in the qualifying Examination.",
-      },
-      {
-        programType: "UG",
-        CourseDuration: "4 Year",
-        CourseName: "CE",
-        intake: "60",
-        lateral: "6",
-        eligibility: `Passed 10+2 examination with Physics and Mathematics as compulsory subjects along with one of no Chemistry Biotechnology Biology/ Technical Vocational sutject Computer
+export const CollegeData=[
+    {
+    CollegeName:"Axis college", CollegeBgPic:"",collegePic:"",details:[
+        {
+            programType:"PG",CourseDuration:"2 Year",CourseName:"Digital Electronics and Communication Engineering",intake:"18",lateral:"",eligibility:"Passed Bachelor's Degree or equivalent in the relevant field. Obtained at least 50% marks (45% marks in case of candidates belonging to reserved category) in the qualifying Examination."
+        },
+        {
+            programType:"PG",CourseDuration:"2 Year",CourseName:"CAD/CAM",intake:"18",lateral:"",eligibility:"Passed Bachelor's Degree or equivalent in the relevant field. Obtained at least 50% marks (45% marks in case of candidates belonging to reserved category) in the qualifying Examination."
+        },
+        {
+            programType:"UG",CourseDuration:"4 Year",CourseName:"CE",intake:"60",lateral:"6",eligibility:`Passed 10+2 examination with Physics and Mathematics as compulsory subjects along with one of no Chemistry Biotechnology Biology/ Technical Vocational sutject Computer
             Science) Information Technology Informatics Practices Agriculture/ Engineering Graphics Business Studies Obtained at least 45% marks (40% marks in case of candidates belonging to reserved category) in the above subjects taken together.
             OR
             Passed Diploma in Engineering and Technology) examination with at least 45% marks (40% marks in case of candidates belonging to reserved category subject to vacancies in the First Year, in case the vacancies at lateral entry are exhausted`,
@@ -255,105 +236,53 @@ export const CollegeData = [
         eligibility: `Passed BCA/ Bachelor Degree in Computer Science Engineering or equivalent Degree.
             OR
             Passed B.Sc./B.Com./B.A. with Mathematics at 10+2 Level or Graduation Level (with additional bridge Courses as per the norms of the concerned University).
-            Obtained at least 50% marks (45% marks in case of candidates belonging to reserved category) in the qualifying Examination.`,
-      },
-      {
-        programType: "PG",
-        CourseDuration: "2 Year",
-        CourseName: "MBA",
-        intake: "120",
-        lateral: "",
-        eligibility: `Passed Bachelor Degree of minimum 3 years duration.
-            Obtained at least 50% marks (45% marks in case of candidates belonging to reserved category) in the qualifying Examination.`,
-      },
-      {
-        programType: "UG",
-        CourseDuration: "3 Year",
-        CourseName: "BBA",
-        intake: "180",
-        lateral: "",
-        eligibility: `Must have passed Intermediate (10+2)/Equivalent examination in Science/Arts/Commerce group with minimum 45% marks.`,
-      },
-      {
-        programType: "UG",
-        CourseDuration: "3 Year",
-        CourseName: "BCA",
-        intake: "180",
-        lateral: "",
-        eligibility: `Class 12 with Mathematics as a compulsory subject and a minimum of 45% aggregate.`,
-      },
-      {
-        programType: "UG",
-        CourseDuration: "3 Year",
-        CourseName: "B.Com",
-        intake: "120",
-        lateral: "",
-        eligibility: `Intermediate of Equivalent`,
-      },
-      {
-        programType: "UG",
-        CourseDuration: "3 Year",
-        CourseName: "B.Sc",
-        intake: "240",
-        lateral: "",
-        eligibility: `Intermediate of Equivalent`,
-      },
-      {
-        programType: "UG",
-        CourseDuration: "3 Year",
-        CourseName: "B.sc.(Biotechnology)",
-        intake: "60",
-        lateral: "",
-        eligibility: `Intermediate or 10+2 in Science (Zoology, Botany, Chemistry) Examination passed with minimum aggregate of 50% marks. (45% for SC/ST)`,
-      },
-      {
-        programType: "UG",
-        CourseDuration: "3 Year",
-        CourseName: "B.sc.(Medical Microbiology)",
-        intake: "60",
-        lateral: "",
-        eligibility: `Intermediate or 10+2 in Science (Zoology, Botany, Chemistry) Examination passed with minimum aggregate of 50% marks. (45% for SC/ST)`,
-      },
-      {
-        programType: "UG",
-        CourseDuration: "4 Year",
-        CourseName: "B.Pharm",
-        intake: "60",
-        lateral: "6",
-        eligibility: `Passed 10+2 examination with Physics and Chemistry as compulsory subjects along with Mathematics/ Biology subject.`,
-      },
-      {
-        programType: "Diploma",
-        CourseDuration: "2 Year",
-        CourseName: "D.Pharm",
-        intake: "60",
-        lateral: "",
-        eligibility: `Passed 10+2 examination with Physics and Chemistry as compulsory subjects along with Mathematics/ Biology subject.`,
-      },
-    ],
-  },
-  {
-    CollegeName: "Harsh college",
-    details: [],
-  },
-  {
-    CollegeName: "Harsh college",
-    details: [],
-  },
-  {
-    CollegeName: "Harsh college",
-    details: [],
-  },
-  {
-    CollegeName: "Harsh college",
-    details: [],
-  },
-  {
-    CollegeName: "Harsh college",
-    details: [],
-  },
-  {
-    CollegeName: "Harsh college",
-    details: [],
-  },
-];
+            Obtained at least 50% marks (45% marks in case of candidates belonging to reserved category) in the qualifying Examination.`
+        },
+        {
+            programType:"PG",CourseDuration:"2 Year",CourseName:"MBA",intake:"120",lateral:"",eligibility:`Passed Bachelor Degree of minimum 3 years duration.
+            Obtained at least 50% marks (45% marks in case of candidates belonging to reserved category) in the qualifying Examination.`
+        },
+        {
+            programType:"UG",CourseDuration:"3 Year",CourseName:"BBA",intake:"180",lateral:"",eligibility:`Must have passed Intermediate (10+2)/Equivalent examination in Science/Arts/Commerce group with minimum 45% marks.`
+        },
+        {
+            programType:"UG",CourseDuration:"3 Year",CourseName:"BCA",intake:"180",lateral:"",eligibility:`Class 12 with Mathematics as a compulsory subject and a minimum of 45% aggregate.`
+        },
+        {
+            programType:"UG",CourseDuration:"3 Year",CourseName:"B.Com",intake:"120",lateral:"",eligibility:`Intermediate of Equivalent`
+        },
+        {
+            programType:"UG",CourseDuration:"3 Year",CourseName:"B.Sc",intake:"240",lateral:"",eligibility:`Intermediate of Equivalent`
+        },
+        {
+            programType:"UG",CourseDuration:"3 Year",CourseName:"B.sc.(Biotechnology)",intake:"60",lateral:"",eligibility:`Intermediate or 10+2 in Science (Zoology, Botany, Chemistry) Examination passed with minimum aggregate of 50% marks. (45% for SC/ST)`
+        },
+        {
+            programType:"UG",CourseDuration:"3 Year",CourseName:"B.sc.(Medical Microbiology)",intake:"60",lateral:"",eligibility:`Intermediate or 10+2 in Science (Zoology, Botany, Chemistry) Examination passed with minimum aggregate of 50% marks. (45% for SC/ST)`
+        },
+        {
+            programType:"UG",CourseDuration:"4 Year",CourseName:"B.Pharm",intake:"60",lateral:"6",eligibility:`Passed 10+2 examination with Physics and Chemistry as compulsory subjects along with Mathematics/ Biology subject.`
+        }, {
+            programType:"Diploma",CourseDuration:"2 Year",CourseName:"D.Pharm",intake:"60",lateral:"",eligibility:`Passed 10+2 examination with Physics and Chemistry as compulsory subjects along with Mathematics/ Biology subject.`
+        },
+    ]
+},
+{
+    CollegeName:"Allenhouse college", CollegeBgPic:"",collegePic:"",details:[]
+},
+{
+    CollegeName:"Krishna Group Of Institutions", CollegeBgPic:"",collegePic:"",details:[]
+},
+{
+    CollegeName:"Rama University", CollegeBgPic:"",collegePic:"",details:[]
+},
+{
+    CollegeName:"Vision Institiute Of Technology", CollegeBgPic:"",collegePic:"",details:[]
+},
+{
+    CollegeName:"J.S University", CollegeBgPic:"",collegePic:"",details:[]
+},
+{
+    CollegeName:"Virendra Swaroop", CollegeBgPic:"",collegePic:"",details:[]
+}
+]

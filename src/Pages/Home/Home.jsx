@@ -2,6 +2,7 @@ import React from 'react'
 import Hero from './Hero'
 
 import HomeAbout from './HomeAbout'
+import HomeCustomer from './HomeCustomer'
 import Slider from '../../Components/Slider/Slider'
 
 function Home() {
@@ -10,6 +11,7 @@ function Home() {
     
           <Hero />
           <HomeAbout/>
+          <HomeCustomer/>
           <Slider/>
     </div>
   )
