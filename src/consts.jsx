@@ -334,7 +334,7 @@ export const CollegeData = [
     ],
   },
   {
-    CollegeName: "Allenhouse college",
+    CollegeName: "Allenhouse College",
     CollegeBgPic: "",
     collegePic: "../src/assets/Logos/AllenhouseLogo.webp",
     details: [],
