@@ -3,10 +3,10 @@ import "./ToggleThemeBtn.css"
 function ToggleThemeBtn(props) {
     const {onChange}=props
   return (
-    <label class="ui-switch">
+    <label className="ui-switch">
       <input type="checkbox" onChange={onChange} />
-      <div class="slider">
-        <div class="circle"></div>
+      <div className="slider">
+        <div className="circle"></div>
       </div>
     </label>
   );

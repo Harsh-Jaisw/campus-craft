@@ -7,14 +7,13 @@ import {CollegeData} from "../../consts";
 import HomeReview from './HomeReview'
 
 function Home() {
-  console.log(CollegeData)
   return (
     <div>
       <Hero />
       <HomeAbout />
       <HomeCustomer />
-      <Slider data={CollegeData} />
           <HomeReview/>
+      <Slider data={CollegeData} />
     </div>
   );
 }

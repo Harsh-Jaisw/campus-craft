@@ -341,32 +341,32 @@ export const CollegeData = [
   },
   {
     CollegeName: "Krishna Group Of Institutions",
-    CollegeBgPic: "../src/assets/Logos/KrishnaGroupOfInstitutionsLogo.webp",
-    collegePic: "",
-    details: [],
-  },
-  {
-    CollegeName: "Rama University",
     CollegeBgPic: "",
     collegePic: "../src/assets/Logos/KrishnaGroupOfInstitutionsLogo.webp",
     details: [],
   },
   {
+    CollegeName: "Rama University",
+    CollegeBgPic: "",
+    collegePic: "../src/assets/Logos/rama-university-logo.webp",
+    details: [],
+  },
+  {
     CollegeName: "Vision Institiute Of Technology",
     CollegeBgPic: "",
-    collegePic: "https://th.bing.com/th/id/OIP.OcanKB2OdhAt_gviz4ta4gAAAA?rs=1&pid=ImgDetMain",
+    collegePic: "../src/assets/Logos/vision-logo.webp",
     details: [],
   },
   {
     CollegeName: "J.S University",
     CollegeBgPic: "",
-    collegePic: "https://render.fineartamerica.com/images/images-profile-flow/400/images/artworkimages/mediumlarge/1/afternoon-delight-melanie-moraga.jpg",
+    collegePic: "../src/assets/Logos/js-university-logo.webp",
     details: [],
   },
   {
     CollegeName: "Virendra Swaroop",
     CollegeBgPic: "",
-    collegePic: "https://i.pinimg.com/originals/cc/48/af/cc48aff694308b3e3d7c962d20c30767.jpg",
+    collegePic: "../src/assets/Logos/virendra-swaroop-logo.webp",
     details: [],
   },
 ];
@@ -377,42 +377,42 @@ export const testimonialsData = [
         {
           id: 1,
           name: "Ananya Singh",
-          photo: "/course/BouStudent1.webp",
+          photo: "../src/assets/GirlStudent.webp",
           contentHeading: "Informed College Selection",
           content: "I'm delighted with the guidance at Campus Craft. The advice is excellent, aiding in informed decisions for choosing the right college effortlessly."
         },
         {
           id: 2,
           name: "Rahul Verma",
-          photo: "/course/BoyStudent.webp",
+          photo: "../src/assets/BoyStudent.webp",
           contentHeading: "Expert Advice for College Paths",
           content: "The staff is highly knowledgeable and supportive at Campus Craft. They ensure every student comprehensively understands various college paths available."
         },
         {
           id: 3,
           name: "Aishwarya Sharma",
-          photo: "/course/GirlStudent1.webp",
+          photo: "../src/assets/GirlStudent1.webp",
           contentHeading: "Streamlined College Decision-Making",
           content: "The guidance experience here is fantastic. It streamlines the decision-making process for choosing the right college, ensuring an enjoyable experience."
         },
         {
           id: 4,
           name: "Vikram Patel",
-          photo: "/course/BoyStudent2.webp",
+          photo: "../src/assets/BoyStudent1.webp",
           contentHeading: "Friendly College Advice",
           content: "The friendly atmosphere at Campus Craft makes college advice enjoyable. I recommend this service to anyone seeking assistance in their academic journey."
         },
         {
           id: 5,
           name: "Deepika Joshi",
-          photo: "/course/GirlStudent.webp",
+          photo: "../src/assets/GirlStudent2.webp",
           contentHeading: "Focus on College Selection Skills",
           content: "The emphasis on practical skills for college selection at Campus Craft sets it apart. The advice provided is a significant advantage for graduates seeking suitable college opportunities."
         },
         {
           id: 6,
           name: "Arun Khanna",
-          photo: "/course/BouStudent3.webp",
+          photo: "../src/assets/BoyStudent2.webp",
           contentHeading: "Guidance for Informed College Choices",
           content: "I appreciate the guidance at Campus Craft. It helps in making informed decisions for choosing the right college, ensuring a smooth transition into academic life."
         }   
