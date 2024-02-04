@@ -10,8 +10,6 @@ const toggleTheme = () => {
   myTheme.setAttribute("data-theme", newTheme);
 };
 
-
-
   return (
     <div className="navbar bg-base-100 sticky top-0 z-10">
       <div className="navbar-start">
