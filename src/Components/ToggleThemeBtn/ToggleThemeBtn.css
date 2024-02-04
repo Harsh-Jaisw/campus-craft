@@ -3,7 +3,7 @@
 .ui-switch {
     /* switch */
     --switch-bg: rgb(135, 150, 165);
-    --switch-width: 48px;
+    --switch-width: 52px;
     --switch-height: 20px;
     /* circle */
     --circle-diameter: 32px;

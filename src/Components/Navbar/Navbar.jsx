@@ -43,6 +43,7 @@ const toggleTheme = () => {
             <li>
               <Link to="/courses">Courses</Link>
             </li>
+          <ToggleThemeBtn onChange={()=>toggleTheme()}/>
           </ul>
         </div>
         <Link to="/" className="btn text-xl">
@@ -67,9 +68,7 @@ const toggleTheme = () => {
           ContactUs
         </Link>
         {/* <button onClick={} id="themeToggleBtn">Theme</button> */}
-      <ToggleThemeBtn onChange={()=>toggleTheme()}/>
-
-
+      <ToggleThemeBtn className={"hidden md:block mx-2"} onChange={()=>toggleTheme()}/>
       </div>
     </div>
   );

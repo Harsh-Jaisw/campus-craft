@@ -15,9 +15,7 @@ function AboutUs() {
           <div className="max-w-md">
             <h1 className="mb-5 text-5xl font-bold">About Us</h1>
             <p className="mb-5">
-              Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
-              excepturi exercitationem quasi. In deleniti eaque aut repudiandae
-              et a id nisi.
+            Crafting educational journeys at Campus Craft, where personalized guidance meets stress-free admissions.
             </p>
           </div>
         </div>

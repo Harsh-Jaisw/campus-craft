@@ -13,11 +13,10 @@ const Slider = ({ data }) => {
           <div className="embla__slide my-2 flex flex-col justify-center " key={index}>
             <img
               className="h-[100px] object-fit m-1 p-1"
-              
               src={item.collegePic}
               alt={`Slide ${index + 1}`}
             />
-            <p className="text-xl font-semibold">{item.CollegeName}</p>
+            <p className="text-sm text-center md:text-xl font-semibold">{item.CollegeName}</p>
           </div>
         ))}
       </div>

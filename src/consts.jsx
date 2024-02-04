@@ -1,7 +1,7 @@
 export const CollegeData = [
   {
     CollegeName: "Axis college",
-    CollegeBgPic: "",
+    CollegeBgPic: "../src/assets/axis-college.webp",
     collegePic: "../src/assets/Logos/axisLogo.webp",
     details: [
       {
@@ -335,19 +335,19 @@ export const CollegeData = [
   },
   {
     CollegeName: "Allenhouse college",
-    CollegeBgPic: "",
+    CollegeBgPic: "../src/assets/allenhouse.webp",
     collegePic: "../src/assets/Logos/AllenhouseLogo.webp",
     details: [],
   },
   {
     CollegeName: "Krishna Group Of Institutions",
-    CollegeBgPic: "",
+    CollegeBgPic: "../src/assets/kit.webp",
     collegePic: "../src/assets/Logos/KrishnaGroupOfInstitutionsLogo.webp",
     details: [],
   },
   {
     CollegeName: "Rama University",
-    CollegeBgPic: "",
+    CollegeBgPic: "../src/assets/Rama-University.webp",
     collegePic: "../src/assets/Logos/rama-university-logo.webp",
     details: [],
   },
@@ -359,7 +359,7 @@ export const CollegeData = [
   },
   {
     CollegeName: "J.S University",
-    CollegeBgPic: "",
+    CollegeBgPic: "../src/assets/js-university.webp",
     collegePic: "../src/assets/Logos/js-university-logo.webp",
     details: [],
   },
