@@ -1,13 +1,14 @@
 import React from "react";
 
 function Card(props) {
-  const { item } = props;
+  const { item,filterData } = props;
+  console.log(filterData)
   return (
-    <div  className="max-w-sm w-full lg:max-w-[1024px] mx-auto lg:flex">
+    <div  className="max-w-sm  w-full lg:max-w-[1024px] mx-auto lg:flex">
       <div   className="gap-3 p-4 flex flex-col justify-between leading-normal">
         {item.details.map((data, index) => (
-          <div key={index} >
-            <div className="mb-8  flex flex-col gap-2">
+          <div key={index} className="border-2 rounded-md p-3 bg-[#E8E8E8]">
+            <div className="mb-8   flex flex-col gap-2">
               <p className="text-sm text-gray-600 flex gap-2 flex-wrap items-center">
                 <span>Program Type : {data.programType}</span>
                 <span>Intake : {data.intake}</span>
