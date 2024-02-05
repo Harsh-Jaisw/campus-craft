@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import about from "../../assets/College.webp";
 import aboutHome from "../../assets/AboutHome.webp";
 import { useNavigate } from "react-router-dom";
+import { teamData } from "../../consts";
+
 function AboutUs() {
-  const navigate=useNavigate()
+  const navigate = useNavigate();
+
   return (
     <div>
       <div
@@ -17,7 +20,8 @@ function AboutUs() {
           <div className="max-w-md">
             <h1 className="mb-5 text-5xl font-bold">About Us</h1>
             <p className="mb-5">
-            Crafting educational journeys at Campus Craft, where personalized guidance meets stress-free admissions.
+              Crafting educational journeys at Campus Craft, where personalized
+              guidance meets stress-free admissions.
             </p>
           </div>
         </div>
@@ -54,9 +58,34 @@ function AboutUs() {
               trusted partner in your educational journey and helping you make
               informed decisions about your future.
             </p>
-            <button onClick={()=>navigate("/contactus")}  className="btn mt-4 btn-primary">Get Started</button>
+            <button
+              onClick={() => navigate("/contactus")}
+              className="btn mt-4 btn-primary"
+            >
+              Get Started
+            </button>
           </div>
         </div>
+      </div>
+      <div className="min-h-[50vh] py-4 gap-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 max-w-[80%] mx-auto items-center justify-center" >
+        {teamData.map((item) => (
+          <div  key={item.id} class="bg-gray-100 relative shadow-xl overflow-hidden hover:shadow-2xl group rounded-xl p-8 transition-all duration-500 transform">
+            <div class="flex flex-col items-center gap-4">
+              <img
+                src={item.photo}
+                class="w-32 group-hover:w-36 group-hover:h-36 h-32 object-center object-cover rounded-full transition-all duration-500 delay-500 transform"
+              />
+              <div class="w-fit transition-all transform duration-500">
+                <h1 class="text-gray-600  font-bold">{item.name}</h1>
+                <p class="text-gray-400">{item.designation}</p>
+                <p className="text-gray-600 text-xs">{item.about}</p>
+                <a class="text-[0.6rem] text-gray-500  group-hover:opacity-100 opacity-0 transform transition-all delay-300 duration-500">
+                  {item.email}
+                </a>
+              </div>
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   );

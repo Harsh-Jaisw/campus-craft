@@ -417,3 +417,46 @@ export const testimonialsData = [
           content: "I appreciate the guidance at Campus Craft. It helps in making informed decisions for choosing the right college, ensuring a smooth transition into academic life."
         }   
   ];
+
+export  const teamData=[
+    {
+      id: 1,
+      name: "Abhishek Pandey",
+      photo: "../src/assets/abhishek-pandey.webp",
+      designation: "Director",
+      about:"Studied in abroad",
+      email: "abhishek.pandey@campuscraft.in"
+    },
+    {
+      id: 2,
+      name: "Harsh Jaiswal",
+      photo: "../src/assets/harsh-jaiswal.webp",
+      designation: "Consultant",
+      about:"Software Engineer",
+      email: "harsh.jaiswal@campuscraft.in"
+    },
+    {
+      id: 3,
+      name: "Prashant Kumar",
+      photo: "../src/assets/prashant-kumar.webp",
+      designation: "Manager",
+      about:"Senior manager",
+      email:"prashant.kumar@campuscraft.in"
+    },
+    {
+      id: 4,
+      name: "Sankalp Sachan",
+      photo: "../src/assets/sankalp-sachan.webp",
+      designation: "Senior Counsellor",
+      about:"Quality Manager",
+      email:"sankalp.sachan@campuscraft.in"
+    },
+    {
+      id: 5,
+      name: "Shivam Yadav",
+      photo: "../src/assets/shivam-yadav.webp",
+      designation: "Co-founder",
+      about:"Engineer at GAIL",
+      email: "shivam.yadav@campuscraft.in"
+    },
+  ]
