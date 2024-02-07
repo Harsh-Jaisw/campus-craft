@@ -1,9 +1,9 @@
-import axislogo from "../src/assets/Logos/axisLogo.webp";
+
 export const CollegeData = [
   {
     CollegeName: "Axis college",
-    CollegeBgPic: "../assets/axis-college.webp",
-    collegePic: axislogo,
+    CollegeBgPic: "/axis-college.webp",
+    collegePic: "/Logos/axisLogo.webp",
     details: [
       {
         programType: "PG",
@@ -336,38 +336,38 @@ export const CollegeData = [
   },
   {
     CollegeName: "Allenhouse college",
-    CollegeBgPic: "../src/assets/allenhouse.webp",
-    collegePic: "../src/assets/Logos/AllenhouseLogo.webp",
+    CollegeBgPic: "/allenhouse.webp",
+    collegePic: "/Logos/AllenhouseLogo.webp",
     details: [],
   },
   {
     CollegeName: "Krishna Group Of Institutions",
-    CollegeBgPic: "../src/assets/kit.webp",
-    collegePic: "../src/assets/Logos/KrishnaGroupOfInstitutionsLogo.webp",
+    CollegeBgPic: "/kit.webp",
+    collegePic: "/Logos/KrishnaGroupOfInstitutionsLogo.webp",
     details: [],
   },
   {
     CollegeName: "Rama University",
-    CollegeBgPic: "../src/assets/Rama-University.webp",
-    collegePic: "../src/assets/Logos/rama-university-logo.webp",
+    CollegeBgPic: "/Rama-University.webp",
+    collegePic: "/Logos/rama-university-logo.webp",
     details: [],
   },
   {
     CollegeName: "Vision Institiute Of Technology",
     CollegeBgPic: "",
-    collegePic: "../src/assets/Logos/vision-logo.webp",
+    collegePic: "/Logos/vision-logo.webp",
     details: [],
   },
   {
     CollegeName: "J.S University",
-    CollegeBgPic: "../src/assets/js-university.webp",
-    collegePic: "../src/assets/Logos/js-university-logo.webp",
+    CollegeBgPic: "/js-university.webp",
+    collegePic: "/Logos/js-university-logo.webp",
     details: [],
   },
   {
     CollegeName: "Virendra Swaroop",
     CollegeBgPic: "",
-    collegePic: "../src/assets/Logos/virendra-swaroop-logo.webp",
+    collegePic: "/Logos/virendra-swaroop-logo.webp",
     details: [],
   },
 ];
@@ -378,42 +378,42 @@ export const testimonialsData = [
         {
           id: 1,
           name: "Ananya Singh",
-          photo: "../src/assets/GirlStudent.webp",
+          photo: "/GirlStudent.webp",
           contentHeading: "Informed College Selection",
           content: "I'm delighted with the guidance at Campus Craft. The advice is excellent, aiding in informed decisions for choosing the right college effortlessly."
         },
         {
           id: 2,
           name: "Rahul Verma",
-          photo: "../src/assets/BoyStudent.webp",
+          photo: "/BoyStudent.webp",
           contentHeading: "Expert Advice for College Paths",
           content: "The staff is highly knowledgeable and supportive at Campus Craft. They ensure every student comprehensively understands various college paths available."
         },
         {
           id: 3,
           name: "Aishwarya Sharma",
-          photo: "../src/assets/GirlStudent1.webp",
+          photo: "/GirlStudent1.webp",
           contentHeading: "Streamlined College Decision-Making",
           content: "The guidance experience here is fantastic. It streamlines the decision-making process for choosing the right college, ensuring an enjoyable experience."
         },
         {
           id: 4,
           name: "Vikram Patel",
-          photo: "../src/assets/BoyStudent1.webp",
+          photo: "/BoyStudent1.webp",
           contentHeading: "Friendly College Advice",
           content: "The friendly atmosphere at Campus Craft makes college advice enjoyable. I recommend this service to anyone seeking assistance in their academic journey."
         },
         {
           id: 5,
           name: "Deepika Joshi",
-          photo: "../src/assets/GirlStudent2.webp",
+          photo: "/GirlStudent2.webp",
           contentHeading: "Focus on College Selection Skills",
           content: "The emphasis on practical skills for college selection at Campus Craft sets it apart. The advice provided is a significant advantage for graduates seeking suitable college opportunities."
         },
         {
           id: 6,
           name: "Arun Khanna",
-          photo: "../src/assets/BoyStudent2.webp",
+          photo: "/BoyStudent2.webp",
           contentHeading: "Guidance for Informed College Choices",
           content: "I appreciate the guidance at Campus Craft. It helps in making informed decisions for choosing the right college, ensuring a smooth transition into academic life."
         }   
@@ -423,7 +423,7 @@ export  const teamData=[
     {
       id: 1,
       name: "Abhishek Pandey",
-      photo: "../src/assets/abhishek-pandey.webp",
+      photo: "/abhishek-pandey.webp",
       designation: "Director",
       about:"Studied in abroad",
       email: "abhishek.pandey@campuscraft.in"
@@ -431,7 +431,7 @@ export  const teamData=[
     {
       id: 2,
       name: "Harsh Jaiswal",
-      photo: "../src/assets/harsh-jaiswal.webp",
+      photo: "/harsh-jaiswal.webp",
       designation: "Consultant",
       about:"Software Engineer",
       email: "harsh.jaiswal@campuscraft.in"
@@ -439,7 +439,7 @@ export  const teamData=[
     {
       id: 3,
       name: "Prashant Kumar",
-      photo: "../src/assets/prashant-kumar.webp",
+      photo: "/prashant-kumar.webp",
       designation: "Manager",
       about:"Senior manager",
       email:"prashant.kumar@campuscraft.in"
@@ -447,7 +447,7 @@ export  const teamData=[
     {
       id: 4,
       name: "Sankalp Sachan",
-      photo: "../src/assets/sankalp-sachan.webp",
+      photo: "/sankalp-sachan.webp",
       designation: "Senior Counsellor",
       about:"Quality Manager",
       email:"sankalp.sachan@campuscraft.in"
@@ -455,7 +455,7 @@ export  const teamData=[
     {
       id: 5,
       name: "Shivam Yadav",
-      photo: "../src/assets/shivam-yadav.webp",
+      photo: "/shivam-yadav.webp",
       designation: "Co-founder",
       about:"Engineer at GAIL",
       email: "shivam.yadav@campuscraft.in"

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import companyLogo from "../../assets/Logos/campus-craft.webp";
+import companyLogo from "/Logos/campus-craft.webp";
 import { CollegeData } from "../../consts";
 
 function ContactUs() {

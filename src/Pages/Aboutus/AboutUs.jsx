@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import about from "../../assets/College.webp";
-import aboutHome from "../../assets/AboutHome.webp";
+import about from "/College.webp";
+import aboutHome from "/About.webp";
 import { useNavigate } from "react-router-dom";
 import { teamData } from "../../consts";
 

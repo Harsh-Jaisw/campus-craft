@@ -1,5 +1,5 @@
 import React from "react";
-import about from "../../assets/About.webp"
+import about from "/About.webp"
 import { useNavigate } from "react-router-dom";
 
 function HomeAbout() {

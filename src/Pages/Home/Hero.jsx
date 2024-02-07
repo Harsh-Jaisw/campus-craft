@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
-import axis from "../../assets/axis-college.webp";
-import allenhouse from "../../assets/allenhouse.webp";
-import kit from "../../assets/kit.webp";
-import Rama from "../../assets/Rama-University.webp";
-import jsu from "../../assets/js-university.webp";
+import axis from "/axis-college.webp";
+import allenhouse from "/allenhouse.webp";
+import kit from "/kit.webp";
+import Rama from "/Rama-University.webp";
+import jsu from "/js-university.webp";
 
 function Hero() {
   const [currentSlide, setCurrentSlide] = useState(1);
