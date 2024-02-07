@@ -1,8 +1,9 @@
+import axislogo from "../src/assets/Logos/axisLogo.webp";
 export const CollegeData = [
   {
     CollegeName: "Axis college",
-    CollegeBgPic: "../src/assets/axis-college.webp",
-    collegePic: "../src/assets/Logos/axisLogo.webp",
+    CollegeBgPic: "../assets/axis-college.webp",
+    collegePic: axislogo,
     details: [
       {
         programType: "PG",
