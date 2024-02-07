@@ -8,38 +8,10 @@ function Courses() {
     programType: "",
     courseDuration: "",
   });
+  const [searchedData,setSearchedData] = useState({ courseName: "", programType: "", courseDuration: "" })
 
-  const [filteredColleges, setFilteredColleges] = useState([]);
   const handleResponse = () => {
-    // Filter the CollegeData based on the filterData
-    const filteredColleges = CollegeData.filter((item) => {
-      // Implement your filtering logic here
-      const matchesCourseName =
-        item.details.some((data) =>
-          data.CourseName.toLowerCase().includes(
-            filterData.courseName.toLowerCase()
-          )
-        ) || filterData.courseName === "";
-
-      const matchesProgramType =
-        item.details.some((data) =>
-          data.programType
-            .toLowerCase()
-            .includes(filterData.programType.toLowerCase())
-        ) || filterData.programType === "";
-
-      const matchesCourseDuration =
-        item.details.some(
-          (data) =>
-            data.CourseDuration.toLowerCase().includes(
-              filterData.courseDuration.toLowerCase()
-            ) || filterData.courseDuration === ""
-        ) || filterData.courseDuration === "";
-
-      return matchesCourseName || matchesProgramType || matchesCourseDuration;
-    });
-
-    setFilteredColleges(filteredColleges);
+    setSearchedData(filterData)
   };
 
   return (
@@ -80,15 +52,11 @@ function Courses() {
         </button>
       </div>
 
-      {filteredColleges.length > 0 ? (
-        filteredColleges.map((item, index) => (
-          <div key={index} className="">
-            <Card item={item} filterData={filterData} />
-          </div>
-        ))
-      ) : (
-        <p>No matching courses found.</p>
-      )}
+      {CollegeData.map((item, index) => (
+        <div key={index} className="">
+          <Card item={item} filterData={searchedData} />
+        </div>
+      ))}
     </div>
   );
 }
