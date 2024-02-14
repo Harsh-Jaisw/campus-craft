@@ -3,9 +3,24 @@ import about from "/College.webp";
 import aboutHome from "/About.webp";
 import { useNavigate } from "react-router-dom";
 import { teamData } from "../../consts";
+import commonApiFunction from "../../api";
 
 function AboutUs() {
   const navigate = useNavigate();
+  useEffect(() => {
+    const visitData = {
+      company_id: "1",
+      page_visited: "About",
+    };
+
+    commonApiFunction("/addVisits", "POST", visitData)
+      .then((data) => {
+        console.log("POST request result:", data);
+      })
+      .catch((error) => {
+        console.error("POST request error:", error);
+      });
+  }, []);
 
   return (
     <div>
