@@ -3,6 +3,7 @@ import about from "/College.webp";
 import aboutHome from "/About.webp";
 import { useNavigate } from "react-router-dom";
 import { teamData } from "../../consts";
+import commonApiFunction from "../../api";
 
 function AboutUs() {
   const navigate = useNavigate();
