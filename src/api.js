@@ -19,7 +19,7 @@ const commonApiFunction = async (endpoint, method = 'GET', data = null, options 
 
     const response = await apiInstance({
       method,
-      url: `https://api.hdfonline.in/api/v1${endpoint}`, 
+      url: `http://api.hdfonline.in/api/v1${endpoint}`, 
       data,
       params,
       ...axiosOptions,
