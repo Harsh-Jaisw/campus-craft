@@ -16,7 +16,7 @@ function Home() {
 
     commonApiFunction("/addVisits", "POST", visitData)
       .then((data) => {
-        console.log("POST request result:", data);
+        console.log("POST request Success:");
       })
       .catch((error) => {
         console.error("POST request error:", error);
