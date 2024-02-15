@@ -15,7 +15,7 @@ function AboutUs() {
 
     commonApiFunction("/addVisits", "POST", visitData)
       .then((data) => {
-        console.log("POST request result:", data);
+        console.log("POST request Success:");
       })
       .catch((error) => {
         console.error("POST request error:", error);
@@ -82,9 +82,12 @@ function AboutUs() {
           </div>
         </div>
       </div>
-      <div className="min-h-[50vh] py-4 gap-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 max-w-[80%] mx-auto items-center justify-center" >
+      <div className="min-h-[50vh] py-4 gap-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 max-w-[80%] mx-auto items-center justify-center">
         {teamData.map((item) => (
-          <div  key={item.id} className="bg-gray-100 relative shadow-xl overflow-hidden hover:shadow-2xl group rounded-xl p-8 transition-all duration-500 transform">
+          <div
+            key={item.id}
+            className="bg-gray-100 relative shadow-xl overflow-hidden hover:shadow-2xl group rounded-xl p-8 transition-all duration-500 transform"
+          >
             <div className="flex flex-col items-center gap-4">
               <img
                 src={item.photo}

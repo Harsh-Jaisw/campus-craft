@@ -27,7 +27,6 @@ const commonApiFunction = async (endpoint, method = 'GET', data = null, options 
     return response.data;
   } catch (error) {
     console.error('API Error:', error);
-    throw error;
   }
 };
 
